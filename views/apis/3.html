@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html ng-app>
+<head>
+<title>Scope Example</title>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+<script type="text/javascript" src="/libs/angular/angular.min.js"></script>
+<script type="text/javascript" src="/js/apis/B.js"></script>
+</head>
+<body>
+	<div ng-controller="ACtrl">
+		ACtrl: {{abc}}
+		<div ng-controller="BCtrl">
+			BCtrl: {{abc}}
+			<div ng-controller="CCtrl">
+				CCtrl: {{abc}}
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
